@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include "token.h"
-#include "entrada.h"
-#include "lexico.h"
-#include "simbolos.h"
-#include "erros.h"
+#include "Lexico/token.h"
+#include "Lexico/entrada.h"
+#include "Lexico/lexico.h"
+#include "Lexico/simbolos.h"
+#include "Lexico/erros.h"
 
 static void imprimir_token(const Token *t) {
     printf("%-14s %3d:%-3d  %-12s", token_nome(t->tipo), t->linha, t->coluna, t->lexema);
